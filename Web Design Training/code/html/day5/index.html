@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML AUDIO/VIDEO</title>
+    <style>
+        h1 {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d00505;">
+    </canvas>
+
+
+    <div style="height: 100px; width: 200px; border: 1px solid red"></div>
+
+
+    <!-- <h1>Play Test Sound</h1>
+
+    <audio controls id="myaudio">
+
+        <source src="./mysound.mp3" type="audio/mp3">
+
+    </audio>
+
+    <hr />
+
+    <button>Play My Audio</button>
+    <button class="pauseVideo">Pause My Audio</button> -->
+
+    <!-- <video autoplay id="autoPlayMyVideo">
+        <source src="sample-video.mp4" type="video/mp4">
+    </video> -->
+
+    <h1>Hello <span class="getData"></span></h1>
+
+    <script>
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+        ctx.fillStyle = "#FF0000";
+        ctx.fillRect(0, 0, 150, 75);
+
+
+        localStorage.setItem('name', "hari")
+
+        var myname = localStorage.getItem('name');
+        console.log(myname)
+
+        document.querySelector('.getData').innerHTML = myname;
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+
+    <style>
+        .text-hint {
+            color: green;
+        }
+
+        input {
+            border: 1px solid red;
+            padding: 10px 20px;
+        }
+
+        input:focus {
+            border-color: transparent;
+            outline: none;
+            border: 1px solid green;
+
+        }
+
+        .wrapper {
+            max-width: 500px;
+            margin: 0 auto;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="wrapper">
+
+
+        * indicates the required field
+        <hr />
+        <form method="post">
+            <div class="form-group">
+                <label for="username">Username Here *</label> <br />
+                <input type="text" id="username" placeholder="Enter YOur Username Here" required><br />
+                <small class="text-hint">You have put the strong password</small>
+            </div>
+            <hr>
+
+            <div class="form-group">
+                <label for="username">Full Name</label> <br />
+                <input type="text" id="fullname" placeholder="Enter Your Full Name" value="Hari Bhusal" readonly><br />
+            </div>
+            <hr>
+            <div class="form-group">
+                <label for="Age">Age</label> <br />
+                <input type="number" max="50" id="Age" placeholder="Enter Your Age"><br />
+            </div>
+            <hr>
+
+
+            <div class="form-group">
+                <label for="email">Email</label> <br />
+                <input type="text" id="email" placeholder="Enter Your Email"><br />
+            </div>
+            <hr>
+            <div class="form-group">
+                <label for="pass">Password</label> <br />
+                <input type="password" id="pass" placeholder="Enter Your Password"><br />
+                <button class="btnPasswordShow">Show Password</button>
+            </div>
+            <hr>
+
+            <div class="form-group">
+                <label for="dateofbirth">Date of Birth</label> <br />
+                <input type="date" id="dateofbirth" placeholder=""><br />
+            </div>
+            <hr>
+            <div class="form-group">
+                <input type="checkbox" id="rem">
+                <label for="rem">I agree to the <a href="#">Terms and Conditions</a></label>
+            </div>
+            <hr>
+
+
+            <select>
+                <option value="1">Nepal</option>
+                <option value="2">India</option>
+                <option value="3">USA</option>
+                <option value="4">Australia</option>
+                <option value="5">Japan</option>
+            </select>
+
+
+            <div class="form-group">
+                <strong>
+                    Please select Gender
+                </strong>
+                <br />
+
+                <input type="radio" id="maleselector" name="genderSelector">
+                <label for="maleselector">Male</label>
+                <br />
+
+                <input type="radio" id="femaleSelector" name="genderSelector">
+                <label for="femaleSelector">Female</label>
+                <br />
+
+                <input type="radio" id="nottosay" name="genderSelector" checked>
+                <label for="nottosay">Prefer not to say</label>
+
+
+            </div>
+            <hr />
+
+
+            <div class="form-group">
+
+                <strong>
+                    Please Select the game you might be interested in
+                </strong>
+                <br />
+
+                <input type="checkbox" id="game1" name="interests" checked>
+                <label for="game1">Cricket</label>
+                <br />
+
+                <input type="checkbox" id="game2" name="interests" checked>
+                <label for="game2">Football</label>
+                <br />
+
+                <input type="checkbox" id="game3" name="interests">
+                <label for="game3">BasketBall</label>
+
+
+            </div>
+
+            <textarea style="width: 100%" name="" id="" rows="10" placeholder="Explain your message hre"></textarea>
+
+            <hr />
+
+
+
+
+            <button type="submit" class="btn_submit">Submit</button>
+        </form>
+
+
+    </div>
+
+    <script>
+        var btnPasswordShow = document.querySelector('.btnPasswordShow');
+        var passwordInput = document.querySelector('#pass');
+
+        btnPasswordShow.addEventListener('click', function (e) {
+            e.preventDefault();
+            passwordInput.type('text')
+        })
+    </script>
+</body>
+
+</html>

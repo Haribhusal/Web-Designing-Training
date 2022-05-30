@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+.myTitle .myTitle2,
+.myTitle3,
+.myTitle4,
+#myTitle5 #myTitle6 {
+    color: red;
+}
+
+
+
+
+
+/* p {
+    text-decoration: line-through;
+    font-size: calc(10px + 20px);
+    /* font-style: ; */
+
+
+::selection {
+    background-color: yellow;
+    color: #fff;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+#blue {
+    height: calc(100vh - 10px);
+}
+
+
+h1.myTitle7 {
+    color: green;
+}
+
+h1.myTitle7 .myTitle8 {
+    color: yellow;
+}
+
+.parent h5 {
+    color: aqua;
+}
+
+/* .parent>p {
+    text-decoration: underline;
+    margin-bottom: 30px;
+} */
+
+div+p {
+    text-decoration: line-through;
+}
+
+p~ul {
+    margin-bottom: 30px;
+    background-color: orange;
+
+}

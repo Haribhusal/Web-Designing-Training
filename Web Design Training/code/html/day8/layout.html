@@ -6,6 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Layout</title>
+    <style>
+        header table a {
+            color: #000;
+        }
+
+        header table a:hover {
+            color: #fff;
+            text-decoration: none;
+
+        }
+    </style>
 
 </head>
 
@@ -17,7 +28,7 @@
                 <td style="width: 20%;">
                     <img src="" class="logo" alt="logo of our website">
                 </td>
-                <td style="width: 60%;" align="center">
+                <td style="width: 60%; background-color: red;" align="center">
                     <nav>
                         <ul>
 
@@ -47,11 +58,45 @@
                 </td>
             </tr>
         </table>
+        <table width="100%" style="background-color: black; color: #fff; padding: 15px 30px;">
+            <tr>
+                <td>
+                    <marquee behavior="" direction="">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, fugit necessitatibus
+                        dignissimos, aperiam quae rerum sint modi dolores amet ullam suscipit delectus dicta nam, earum
+                        repellat illum corrupti placeat iste.
+
+                    </marquee>
+                </td>
+            </tr>
+
+        </table>
 
     </header>
     <main>
-        <section style="padding: 0 50px">
-            <img style="width: 100%" src="https://picsum.photos/id/45/1000/300" alt="">
+
+        <section style="  position: relative;">
+
+            <div class="textwrapper"
+                style="position: absolute; background-color: red; top: 30px; left: 100px; left: 50%;top: 50%; transform: translate(-50%, -50%); padding: 30px;">
+
+                <h3>
+                    Welcome to my Website
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, non suscipit vero unde rerum
+                    reprehenderit.
+                </p>
+                <div class="btnwrapper">
+                    <button>
+                        Read More
+                    </button>
+                </div>
+            </div>
+
+            <a href="index.html">
+                <img style="width: 100%" src="https://picsum.photos/id/45/1000/300" alt="">
+            </a>
         </section>
 
         <section style="padding: 0 50px;">

@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(0, 10, 0);
+}
+
+/* 
+a {
+    text-decoration: none;
+    color: red;
+    background-color: blue;
+} */
+
+/* element selector */
+h1 {
+    color: black;
+    background-color: red;
+    /* Declaration 1 */
+
+    text-decoration: underline;
+    letter-spacing: 10px;
+    word-spacing: 30px;
+    margin-top: 0px;
+}
+
+.cssWala {
+    color: red;
+    background-color: black;
+    /* Declaration 1 */
+
+    text-decoration: underline;
+    letter-spacing: 10px;
+    word-spacing: 30px;
+    margin-top: 0px;
+}
+
+/* id selector */
+#html_wala {
+    font-size: 100px;
+}
+
+/* class selector */
+
+.html_wala {
+    font-size: 20px;
+}
+
+/* attribute selector */
+
+[role=heading] {
+    background-color: pink !important;
+}
+
+
+
+table {}
+
+
+p {}
+
+
+
+a {}
+
+ul li a {
+    color: aqua;
+}
+
+ul li:nth-child(2) a {
+    color: black;
+}
+
+
+
+
+
+.wrapper {
+    /* background-color: rgba(255, 0, 0, 0.8);
+    padding: 30px;
+    background-image: url('https://picsum.photos/400');
+    background-size: cover;
+    background-position: center center; */
+
+    background: red url('https://picsum.photos/400') no-repeat;
+    /* shorthand Rule */
+
+}
+
+/* .wrapper .item:nth-child(odd) {
+    background-color: yellow;
+} */
+
+/* .wrapper .item:nth-child(even) {
+    background-color: black;
+} */

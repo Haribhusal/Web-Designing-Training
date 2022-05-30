@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACGA,AAAA,MAAM,CAAC;EACH,gBAAgB,EAJT,OAAO;EAKd,OAAO,EAAE,IAAI;EACb,KAAK,EAAE,IAAI;CAMd;;AATD,AAKI,MALE,CAKF,MAAM,CAAC;EACH,MAAM,EAAE,aAAa;CAExB",
+    "sources": [
+        "custom.scss",
+        "_header.scss"
+    ],
+    "names": [],
+    "file": "custom.css"
+}

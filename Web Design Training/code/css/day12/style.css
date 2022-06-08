@@ -1,0 +1,54 @@
+@font-face {
+    font-family: ProximaNova;
+    src: url('./Proxima.otf');
+}
+
+
+
+body {
+    font-family: ProximaNova, sans-serif;
+}
+
+.glass {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    word-wrap: break-word;
+
+
+
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    position: relative;
+}
+
+ul li::before {
+    content: "->";
+    position: absolute;
+    left: -30px;
+}
+
+ul li::after {
+    content: ".";
+}
+
+input {
+
+    color: red;
+}
+
+input::placeholder {
+    color: red;
+}
+
+table td {
+    width: 100px;
+    height: 300px;
+    vertical-align: center;
+    border: 1px solid red;
+}

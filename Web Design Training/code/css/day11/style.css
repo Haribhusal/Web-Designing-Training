@@ -1,0 +1,35 @@
+h1,
+h2,
+h3 {
+
+    font-family: 'Playfair Display',
+        serif;
+}
+
+
+body {
+    font-family: 'Source Sans Pro',
+        sans-serif;
+    font-weight: 900;
+}
+
+.box {
+    /* height: 100px; */
+
+    background-color: green;
+    /* display: none; */
+    display: inline-block;
+}
+
+.myTable {
+    display: table;
+}
+
+.myTable .heading {
+    display: table-row;
+}
+
+.myTable .heading .data {
+    display: table-cell;
+    border: 1px solid green;
+}

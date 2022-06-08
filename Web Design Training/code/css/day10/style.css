@@ -1,0 +1,85 @@
+.gridwrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: 30px;
+}
+
+.grid_item {
+    /* background-color: red; */
+    height: 100%;
+    width: 100%;
+
+}
+
+.gridwrapper .grid_item:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    background-color: aqua;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.gridwrapper .grid_item:nth-child(2) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: palevioletred;
+    grid-row-start: 2;
+    grid-row-end: 7;
+
+}
+
+.gridwrapper .grid_item:nth-child(3) {
+    grid-column: 2/5;
+    background-color: black;
+    grid-row-start: 2;
+    grid-row-end: 7;
+    color: #fff;
+
+
+
+}
+
+
+.gridwrapper .grid_item:nth-child(3) .container {
+    padding: 30px;
+}
+
+.gridwrapper .grid_item:nth-child(4) {
+    grid-column-start: 1;
+    grid-column-end: 5;
+
+    background: red;
+
+    grid-row-start: 7;
+    grid-row-end: 9;
+    opacity: 0.2;
+    pointer-events: none;
+
+}
+
+.buttonwrapper {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin: 30px 0 0 30px;
+}
+
+.buttonwrapper button {
+    padding: 10px 30px;
+    border: none;
+}
+
+.buttonwrapper .icon {
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    background-color: red;
+    opacity: 0;
+    transition: all 10s ease;
+
+}
+
+.buttonwrapper:hover .icon {
+    opacity: 1;
+}

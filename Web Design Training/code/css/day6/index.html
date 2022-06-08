@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Root</title>
+    <style>
+        body {
+            font-size: 7px;
+        }
+
+        :root {
+            --p: red;
+
+            --secCOlor: pink;
+        }
+
+        ::selection {
+            background-color: var(--secCOlor);
+            color: #000;
+        }
+
+        h1 {
+            color: var(--p);
+            font-size: 2em;
+        }
+
+        .box {
+            height: 10em;
+
+            width: 90px;
+            background-color: var(--secCOlor);
+        }
+
+        input {
+            color: green;
+        }
+
+        input:out-of-range {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        Hello
+    </h1>
+
+    <input type="number" max="10" min="5">
+    <div class="box"></div>
+
+</body>
+
+</html>

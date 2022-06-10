@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+button.btn {
+    background-color: lightcoral;
+    padding: 15px 30px;
+    border: 1px solid transparent;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    overflow: hidden;
+}
+
+.btn:hover i {
+    animation: FadeOutRight 0.5s ease;
+    /* visibility: hidden;
+    animation-name: FadeOutRight;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    /* animation-iteration-count: infinite; */
+    /* animation-delay: 2000ms; */
+    /* animation-fill-mode: forwards; */
+    animation-direction: alternate-reverse;
+}
+
+
+
+.btn i {
+    height: 30px;
+    width: 30px;
+    background-color: #fff;
+    color: lightcoral;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+@keyframes FadeOutRight {
+    from {
+        transform: translateX(0);
+        visibility: visible;
+    }
+
+    to {
+        transform: translateX(100px);
+        visibility: hidden;
+    }
+}
+
+.progressbar {
+    height: 10px;
+    width: 100%;
+    margin-top: 200px;
+    background-color: brown;
+    position: relative;
+    border-radius: 10px;
+    /* overflow: hidden; */
+}
+
+
+
+.progressbar .bar {
+    position: absolute;
+    animation: slideLeftToRight 5s ease infinite;
+
+    bottom: 0;
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    border: 10px dashed #000;
+    left: 0;
+    transform: translateY(-50%);
+
+}
+
+@keyframes slideLeftToRight {
+    /* 20% {
+        left: 0;
+        background-color: #fff;
+        transform: rotate(270deg);
+    }
+
+    40% {
+        left: 30%;
+        background-color: rgb(1, 218, 117);
+        transform: rotate(360deg);
+    }
+
+    60% {
+        left: 60%;
+        background-color: rgb(209, 6, 155);
+        transform: rotate(90deg);
+    }
+
+    80% {
+        left: 80%;
+        background-color: rgb(6, 209, 196);
+        transform: rotate(180deg);
+    }
+
+    100% {
+        left: 100%;
+        background-color: rgb(241, 226, 20);
+        transform: rotate(270deg);
+    } */
+
+    from {
+        transform: rotate(0deg);
+        left: 0;
+    }
+
+    to {
+        transform: rotate(360deg);
+        left: 100%;
+
+    }
+}
+
+body {
+    counter-reset: box;
+}
+
+
+.box {
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    background-color: red;
+}
+
+.box::before {
+    counter-increment: box;
+    /* Increment the value of section counter by 1 */
+    content: "box "counter(box) ": ";
+    /* Display counter value in default style (decimal) */
+}

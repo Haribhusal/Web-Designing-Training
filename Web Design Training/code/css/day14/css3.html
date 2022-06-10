@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 3</title>
+    <style>
+        /* Text Color
+        Text Alignment
+        Text Decoration
+        Text Transformation
+        Text Spacing
+        Text Shadow */
+        .box {
+            height: 200px;
+            width: 500px;
+            /* background: linear-gradient() border: 100px solid red; */
+            /* background: linear-gradient(90deg, green, red, pink, blue); */
+            /* border-image: url('./Nokota_Horses_cropped.jpg') 30; */
+            background: #c3c2c2;
+            /* box-shadow: 49px 38px 89px rgba(0, 0, 0, 0.1); */
+            border-radius: 10px;
+            font-size: 80px;
+            text-align: center;
+            text-transform: lowercase;
+            letter-spacing: 10px;
+            position: relative;
+            /* transform: translateX(100px) translateY(50px) skew(-50deg) scale(0); */
+            /* box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.6); */
+
+
+            transform:
+                perspective(900px) rotateX(60deg) scale(0.7);
+            box-shadow: 0px 20px 100px #555;
+            transition: 0.5s ease all;
+
+
+
+        }
+
+        .box:hover {
+            transform:
+                rotate(0deg) scale(1) translateY(10px);
+
+        }
+
+        .box .ribbon {
+            position: absolute;
+            background-color: red;
+            color: #fff;
+            top: 0;
+            right: 30px;
+            font-size: 10px;
+            height: 60%;
+            width: 10%;
+        }
+
+        .box .ribbon .text {
+            position: absolute;
+            /* transform: rotate(-90deg); */
+            transform: rotate(-90deg);
+            width: 300px;
+            left: -124px;
+            top: -50px;
+            text-align: start;
+        }
+
+        /* rgba */
+        /* hsl */
+        /* hexadecimal */
+
+        /* cmyk */
+    </style>
+</head>
+
+<body>
+
+
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, sit?
+        <div class="ribbon">
+            <span class="text">
+                Get Discount
+            </span>
+        </div>
+    </div>
+
+</body>
+
+</html>

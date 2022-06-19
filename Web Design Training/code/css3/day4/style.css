@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.gridwrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.gridwrapper .item {
+    min-height: 100px;
+    text-align: center;
+
+    background-color: gray;
+
+
+}
+
+.gridwrapper .item:nth-child(2) {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gridwrapper .item:nth-child(2) .content {
+    padding: 60px;
+}

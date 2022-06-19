@@ -1,0 +1,20 @@
+.homepage .hero {
+    height: 70vh;
+    background-color: var(--primaryColorDim);
+}
+
+.homepage .hero .text_info {
+    max-width: 50%;
+
+}
+
+.catSection .product .btn_primary:hover {
+    position: relative;
+    transform: translateY(-2px);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.catSection .productswrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}

@@ -1,0 +1,26 @@
+  .box {
+      border-radius: 10px;
+      box-shadow: 0px 10px 40px rgba(200, 0, 0, 0.2);
+      background-color: #bbb;
+
+      h2 {
+
+          color: orange;
+          font-weight: medium;
+          font-stretch: expanded;
+      }
+  }
+
+  .box {
+      transform: rotate((30deg));
+  }
+
+  //   .box h2 {
+  //       color: red;
+
+
+  //   }
+
+  .img {
+      transform: rotate3d(0, 1, 0, 30deg);
+  }

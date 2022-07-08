@@ -1,0 +1,25 @@
+header {
+
+    nav {
+        ul {
+            list-style: none;
+
+            li {
+                a {
+                    display: block;
+                    padding: 10px;
+                    color: white;
+                }
+
+                &:last-child {
+                    background-color: black;
+
+                }
+            }
+        }
+    }
+}
+
+header nav ul li a:last-child {
+    background-color: black;
+}

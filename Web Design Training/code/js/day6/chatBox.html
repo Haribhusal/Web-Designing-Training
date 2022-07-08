@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbox Design</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="chatBox">
+        <div class="chatSection">
+            <ul class="conversation">
+                <li class="sender">
+                    Lorem ipsum dolor sit amet.
+                </li>
+                <li class="receiver">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, obcaecati?
+                </li>
+                <li class="sender">
+                    Lorem ipsum dolor sit amet.
+                </li>
+                <li class="sender">
+                    Lorem ipsum dolor sit amet.
+                </li>
+                <li class="sender">
+                    Lorem ipsum dolor sit amet.
+                </li>
+                <li class="receiver">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, obcaecati?
+                </li>
+            </ul>
+            <form>
+                <textarea name="" id="" cols="" rows="3" placeholder="Type your message here"></textarea>
+                <button type="submit" class="btn">Send</button>
+            </form>
+        </div>
+        <div class="chatIconTrigger">
+            <img src="./icon.png" alt="">
+        </div>
+    </div>
+
+
+    <script>
+        var chatIconTrigger = document.querySelector('.chatIconTrigger');
+        var chatSection = document.querySelector('.chatSection');
+
+        chatIconTrigger.addEventListener('click', function () {
+            chatSection.classList.toggle('show');
+        })
+    </script>
+</body>
+
+</html>

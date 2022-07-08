@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+
+<body>
+
+    <h1 id="test"></h1>
+
+
+    <script>
+        var myTitle = document.getElementById('test');
+
+        myTitle.style.backgroundColor = " orange"
+
+        document.getElementById('test').innerHTML = "I am from js"
+
+
+        var condition = false;
+
+
+        console.log(typeof (condition))
+
+        if (condition) {
+            console.log('Condition is true now')
+        } else {
+            console.log('Condition is false now')
+        }
+
+
+        var is_married = true
+
+        if (is_married) {
+            console.log("Go to home")
+        } else {
+            console.log("Go to Cafe")
+
+        }
+
+        if (is_married = true) {
+            console.log('make food')
+        }
+
+
+        var car = {
+            color: 'red',
+            release: '2020',
+            capacity: '100hz'
+        }
+
+        var person = {
+            name: "Hari",
+            age: 26,
+            address: "Shankhamul"
+        }
+
+        console.log('This person\'s name is ' + person.name + ' and his/her age is ' + person.age +
+            ' and he/she is living at ' + person.address)
+
+        console.log(typeof (person))
+    </script>
+</body>
+
+</html>

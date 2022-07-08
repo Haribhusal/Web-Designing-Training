@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll top and fix header</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            padding: 20px 7%;
+            background-color: blueviolet;
+            color: #fff;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        header a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .fixMyHeader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding: 20px 7%;
+            width: 100%;
+            box-sizing: border-box;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="spacer">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate aliquid neque repudiandae cumque iusto
+        blanditiis, exercitationem laborum, quod delectus id reiciendis consequatur voluptatum modi eligendi? Blanditiis
+        at aperiam minus? Error?
+    </div>
+    <header class="myHeader">
+        <div class="logo">
+            <a href="#">
+                <img src="https://picsum.photos/id/34/100/100" alt="">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Link 1</a>
+                </li>
+                <li>
+                    <a href="#">Link 1</a>
+                </li>
+                <li>
+                    <a href="#">Link 1</a>
+                </li>
+                <li>
+                    <a href="#">Link 1</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="content" style="height: 4000px;"></section>
+    </main>
+
+
+    <script>
+        window.onscroll = function () {
+            var myHeader = document.querySelector('header')
+            console.dir(myHeader)
+            var topPosition = myHeader.offsetTop;
+            console.log(topPosition)
+
+            var countYScroll = window.pageYOffset;
+            console.log(countYScroll)
+
+            if (countYScroll > topPosition) {
+                myHeader.classList.add('fixMyHeader')
+            } else {
+                myHeader.classList.remove('fixMyHeader')
+            }
+        }
+    </script>
+
+</body>
+
+</html>

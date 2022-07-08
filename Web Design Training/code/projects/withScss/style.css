@@ -1,0 +1,45 @@
+header nav ul {
+  list-style: none;
+}
+
+header nav ul li a {
+  display: block;
+  padding: 10px;
+  color: white;
+}
+
+header nav ul li:last-child {
+  background-color: black;
+}
+
+.box {
+  background-color: #fff;
+  border-bottom: 1px dotted #000;
+  -webkit-box-shadow: 0px 10px 40px rgba(200, 0, 0, 0.7);
+          box-shadow: 0px 10px 40px rgba(200, 0, 0, 0.7);
+}
+
+.box1 {
+  background-color: red;
+  border-bottom: 50px dotted orange;
+  -webkit-box-shadow: 0px 10px 40px rgba(200, 0, 0, 0.7);
+          box-shadow: 0px 10px 40px rgba(200, 0, 0, 0.7);
+}
+
+.card, .divSimilarToCard {
+  background-color: gray;
+  padding: 10px;
+  height: 100px;
+  width: 300px;
+  border: 10px solid red;
+  border-radius: 10px;
+}
+
+.card_primary {
+  background-color: #0097a7;
+}
+
+.divSimilarToCard {
+  background-color: orange;
+}
+/*# sourceMappingURL=style.css.map */

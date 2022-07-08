@@ -1,0 +1,111 @@
+header {
+    background-color: var(--primaryColor);
+    color: #fff;
+}
+
+header a {
+    color: #fff;
+}
+
+.btn {
+    padding: 10px 17px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+
+
+}
+
+.btn:hover {
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.btn_primary {
+    background-color: var(--primaryColor);
+    color: #fff;
+}
+
+
+.shadow {
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.btn_secondary {
+    background-color: #fff;
+    position: relative;
+    border-radius: 4px;
+}
+
+.btn_secondary:hover {
+    color: #fff;
+}
+
+.btn_secondary::before {
+    content: '';
+    position: absolute;
+    background-color: var(--primaryColor);
+    height: 100%;
+    width: 0px;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    transition: all 0.5s ease;
+    border-radius: 4px;
+}
+
+.btn_secondary:hover::before {
+    width: 100%;
+}
+
+.btn_secondary span {
+    position: relative;
+    z-index: 99;
+}
+
+article.product {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+article.product figure {
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 0;
+    height: 200px;
+}
+
+article.product:hover {
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+
+}
+
+article.product figure img {
+    height: 100%;
+    width: 100%;
+
+    object-fit: cover;
+    object-position: center;
+    border-radius: 6px;
+    transition: all 0.5s ease;
+}
+
+article.product figure img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 6px;
+}
+
+article.product:hover img {
+    transform: scale(1.3) rotate(5deg);
+    border-radius: 10px;
+
+}
+
+article.product .info {
+    padding: 20px;
+
+}

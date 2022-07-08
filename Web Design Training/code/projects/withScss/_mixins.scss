@@ -1,0 +1,5 @@
+@mixin boxStyles($bgcolor, $borderColor, $borderWidth) {
+    background-color: $bgcolor;
+    border-bottom: $borderWidth dotted $borderColor;
+    box-shadow: 0px 10px 40px rgba(200, 0, 0, 0.7);
+}

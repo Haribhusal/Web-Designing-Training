@@ -1,0 +1,29 @@
+.box {
+    @include boxStyles(#fff, #000, 1px);
+}
+
+.box1 {
+    @include boxStyles(red, orange, 50px);
+}
+
+.card {
+    background-color: gray;
+    padding: 10px;
+    height: 100px;
+    width: 300px;
+    border: 10px solid red;
+    border-radius: 10px;
+
+    @include boxStyles(#fff, #000, 1px);
+
+}
+
+.card_primary {
+    background-color: $p;
+}
+
+.divSimilarToCard {
+    @extend .card;
+    background-color: orange;
+
+}

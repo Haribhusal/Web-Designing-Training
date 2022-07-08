@@ -1,0 +1,18 @@
+.shoppage article.product {
+    background-color: #fff !important;
+}
+
+
+.shoppage article.product {
+    position: relative;
+}
+
+.shoppage article.product .btn_primary {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.shoppage .catSection {
+    background-color: var(--primaryColorDim);
+}

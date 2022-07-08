@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            /* cursor: url('https://picsum.photos/id/23/100/100'), auto; */
+        }
+
+        .tooltip-wrapper {
+            position: relative;
+        }
+
+
+        .tooltip-wrapper .tooltip {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+            padding: 10px 10px;
+            bottom: 100%;
+            max-width: 300px;
+            transition: all 0.5s ease;
+
+        }
+
+        .tooltip-wrapper .tooltip::before {
+            content: '';
+            position: absolute;
+            border-top: 10px solid #fff;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            border-bottom: 10px solid transparent;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+        }
+
+        /* @keyframes fadeInUp {
+            from {
+                transform: translateY(0);
+            }
+
+            to {
+                transform: translateY(-10px);
+
+            }
+        } */
+    </style>
+</head>
+
+<body>
+
+    <hr />
+    <br>
+    <br>
+    <br>
+    Custom Cursor
+
+    <div class="box tooltip-wrapper">
+        <div class="tooltip">
+            <div class="tooltipContent">
+                This is a random image
+            </div>
+        </div>
+        <a href="#">GO to google</a>
+    </div>
+
+
+    <script>
+        var tooltipWrapper = document.querySelector('.tooltip-wrapper');
+        var toolTip = document.querySelector('.tooltip');
+        tooltipWrapper.addEventListener('mouseenter', function () {
+            toolTip.style.display = 'block';
+        });
+        tooltipWrapper.addEventListener('mouseleave', function () {
+            toolTip.style.display = 'none';
+        });
+    </script>
+</body>
+
+</html>

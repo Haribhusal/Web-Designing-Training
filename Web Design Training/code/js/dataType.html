@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data types</title>
+</head>
+
+<body>
+
+    <script>
+        function getVowels(str) {
+            const m = str.match(/[aeiou]/gi);
+            if (m === null) {
+                return 0;
+            }
+            return m.length;
+        }
+
+        console.log(getVowels('hari BHUSAL'));
+        // expected output: 0
+
+
+
+
+        // var a = 5
+        // var b = "5"
+
+        // if (a === b) {
+        //     console.log('a and b are same')
+        // }
+
+        // var sum
+
+        // function addValues(a, b) {
+
+        //     sum = a + b;
+        //     return sum;
+        // }
+
+        // console.log(addValues(2, 3))
+
+
+
+        // var startingSalary = 3e5
+
+        // document.write(startingSalary)
+
+        // console.log(typeof (startingSalary))
+    </script>
+</body>
+
+</html>

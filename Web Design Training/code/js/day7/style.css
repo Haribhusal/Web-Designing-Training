@@ -1,0 +1,24 @@
+.myHeader {
+    background-color: rgb(10, 43, 127);
+}
+
+.myHeader .bg-light {
+    background-color: transparent !important;
+
+}
+
+.myHeader nav .nav-link {
+
+    color: #fff;
+
+}
+
+.myHeader nav .active {
+
+    color: #fff !important;
+
+}
+
+.myHeader .navbar-brand {
+    color: #fff;
+}
